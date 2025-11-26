@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Mariscos El Fernando</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo con navegación principal
+         Permite acceder a todas las secciones desde cualquier parte del sitio -->
+    <header>
+        <div class="contenedor-encabezado">
+            <!-- Logo que funciona como enlace de retorno a la página inicial -->
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/LOGO/marisqueria-el-fernando.png" alt="Marisquería El Fernando">
+            </a>
+            
+            <!-- Menú de navegación con opciones principales del restaurante -->
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="index.html">MENÚ PRINCIPAL</a></li>
+                    
+                    <!-- Menú desplegable para categorías de alimentos
+                         Se activa al pasar el mouse sobre "MENÚ COMIDA" -->
+                    <li class="menu-desplegable">
+                        <a href="#" class="boton-desplegable">MENÚ COMIDA</a>
+                        <div class="contenido-desplegable">
+                            <a href="platosPrincipales.html">Platos principales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="postres.html">Postres</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="promociones.html">PROMOCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Barra de navegación secundaria para categorías de promociones
+         Permite saltar rápidamente entre secciones de ofertas -->
+    <nav class="navegacion-secundaria">
+        <div class="contenedor-navegacion-secundaria">
+            <ul>
+                <li><a href="#promociones-actuales">PROMOCIONES ACTUALES</a></li>
+                <li><a href="#ofertas-navidenas">OFERTAS NAVIDEÑAS</a></li>
+                <li><a href="#ofertas-ano-nuevo">OFERTAS DE AÑO NUEVO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal de todas las promociones
+         Organiza las ofertas por temporada y disponibilidad -->
+    <div class="contenedor-menu">
+        <h1>PROMOCIONES ESPECIALES</h1>
+
+        <!-- Sección de promociones actuales - disponibles inmediatamente
+             Ofertas vigentes que los clientes pueden aprovechar ahora -->
+        <section class="paquetes-friday" id="promociones-actuales">
+            <h2>PROMOCIONES ACTUALES</h2>
+            <p>¡Disponibles ahora mismo en nuestro restaurante!</p>
+            
+            <!-- Grid responsivo de tarjetas de promoción
+                 Muestra paquetes combinados con descuentos especiales -->
+            <div class="contenedor-paquetes">
+
+                <!-- Tarjeta individual de promoción con imagen y precios
+                     Muestra precio anterior y precio promocional -->
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/CLASICO-MARINERO.png" alt="Clásico Marinero" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CLÁSICO MARINERO</h3>
+                        <p>Filete a la Diabla + Fresas con Crema + Michelada Clásica</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$560</span>
+                            <span class="precio-promocion">$399</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Torre-Sabrosa.png" alt="Torre Sabrosa" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>TORRE SABROSA</h3>
+                        <p>Gran Torre de Mariscos Familiar + Pastel Rojo + Cantarito Loco Familiar</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$1,010</span>
+                            <span class="precio-promocion">$749</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Rostizado-con-Estilo.png" alt="Rostizado con Estilo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>ROSTIZADO CON ESTILO</h3>
+                        <p>Pulpo Corazón del Mar + Barras de Limón + Daiquiri del Tigre</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$815</span>
+                            <span class="precio-promocion">$599</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Atun-Sellado-y-Frescura.png" alt="Atún Sellado & Frescura" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>ATÚN SELLADO & FRESCURA</h3>
+                        <p>Medallón de Atún Sellado + Copa de Frutas + Tiger Mojito</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$840</span>
+                            <span class="precio-promocion">$619</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Camarones-Diabla-Party.png" alt="Camarones Diabla Party" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CAMARONES DIABLA PARTY</h3>
+                        <p>Camarones a la Diabla + Helados Artesanales + Michelada Clásica</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$605</span>
+                            <span class="precio-promocion">$449</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Mariscada-Explosiva.png" alt="Mariscada Explosiva" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>MARISCADA EXPLOSIVA</h3>
+                        <p>Mojajete de Mariscos Familiar + Flan Napolitano + Bomba de Michelada</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$875</span>
+                            <span class="precio-promocion">$649</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de promociones navideñas - ofertas temporales
+             Disponibles solo durante fechas específicas de diciembre -->
+        <section class="paquetes-friday" id="ofertas-navidenas">
+            <h2>OFERTAS NAVIDEÑAS</h2>
+            <p>¡Próximamente! Del 23 al 25 de Diciembre 2025</p>
+            
+            <!-- Grid de tarjetas con promociones navideñas
+                 Incluye elementos temáticos y decoraciones especiales -->
+            <div class="contenedor-paquetes">
+
+                <!-- Tarjeta individual de promoción navideña
+                     Destaca ingredientes y preparaciones festivas -->
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Fresas-con-Crema.png" alt="Fresas con Crema Navideñas" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>FRESAS CON CREMA NAVIDEÑAS</h3>
+                        <p><strong>Ingredientes:</strong> Fresas naturales, crema dulce, galletas, decoración navideña especial.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$85</span>
+                            <span class="precio-promocion">$70</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Aguachile-Verde.png" alt="Aguachile Verde Navideño" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>AGUACHILE VERDE NAVIDEÑO</h3>
+                        <p><strong>Ingredientes:</strong> Camarón cristal marinado en limón con pepino, cebolla morada, cilantro, aguacate.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$220</span>
+                            <span class="precio-promocion">$180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Tiger-Mojito.png" alt="Tiger Mojito Navideño" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>TIGER MOJITO NAVIDEÑO</h3>
+                        <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre, hierbabuena, limón verde, miel de agave, refresco de manzana.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$160</span>
+                            <span class="precio-promocion">$130</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Panna-Cotta.png" alt="Panna Cotta Navideña" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>PANNA COTTA NAVIDEÑA</h3>
+                        <p><strong>Ingredientes:</strong> Crema, vainilla, gelatina, frutos rojos frescos, decoración navideña especial.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$105</span>
+                            <span class="precio-promocion">$85</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Pulpo-Zarandeado.png" alt="Pulpo Zarandeado Navideño" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>PULPO ZARANDEADO NAVIDEÑO</h3>
+                        <p><strong>Ingredientes:</strong> Pulpo rostizado con salsa especial, cebolla grillé, acompañado de puré de papa.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$280</span>
+                            <span class="precio-promocion">$230</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/NAVIDAD/Promocion-Michelada-Cubana.png" alt="Michelada Cubana Navideña" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>MICHELADA CUBANA NAVIDEÑA</h3>
+                        <p><strong>Ingredientes:</strong> Cerveza clara, limón, salsas especiales, chile piquín, decoración festiva.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$110</span>
+                            <span class="precio-promocion">$90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de promociones de año nuevo - ofertas de fin de año
+             Disponibles para celebrar el cambio de año -->
+        <section class="paquetes-friday" id="ofertas-ano-nuevo">
+            <h2>OFERTAS DE AÑO NUEVO</h2>
+            <p>¡Próximamente! Del 30 de Diciembre 2024 al 1 de Enero 2025</p>
+            
+            <!-- Grid de tarjetas con promociones de año nuevo
+                 Incluye elementos festivos y opciones para celebraciones -->
+            <div class="contenedor-paquetes">
+
+                <!-- Tarjeta individual de promoción de año nuevo
+                     Destaca preparaciones especiales para la celebración -->
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-FLAN-NAPOLITANO.png" alt="Flan Napolitano Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>FLAN NAPOLITANO AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Huevo, leche, vainilla, caramelo, decoración con frutas y crema festiva.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$75</span>
+                            <span class="precio-promocion">$60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-CAMARONES=AL-MOJO-DE-AJO.png" alt="Camarones al Mojo de Ajo Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CAMARONES AL MOJO DE AJO AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Camarones salteados con mantequilla y ajo dorado, acompañados de puré y chips de camote.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$200</span>
+                            <span class="precio-promocion">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-CREMA-DE-AVENA.png" alt="Crema de Avena Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CREMA DE AVENA AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Avena licuada con canela, base cremosa y reconfortante para empezar el año.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$30</span>
+                            <span class="precio-promocion">$25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-GRAN-TORRE-DE-MARISCOS.png" alt="Gran Torre de Mariscos Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>GRAN TORRE DE MARISCOS AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Camarones, atún, ceviche, pulpo, aguacate, pepino, cebolla con salsa especial.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$320</span>
+                            <span class="precio-promocion">$260</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-DAIQUIRI-DEL-TIGRE.png" alt="Daiquiri del Tigre Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>DAIQUIRI DEL TIGRE AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre, jugo de limón amarillo, miel de agave, toque cítrico especial.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$170</span>
+                            <span class="precio-promocion">$140</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/anioNuevo/anioNuevo-BARRAS-DE-LIMON.png" alt="Barras de Limón Año Nuevo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>BARRAS DE LIMÓN AÑO NUEVO</h3>
+                        <p><strong>Ingredientes:</strong> Base de galleta, relleno de limón, azúcar glass, sabor ácido y refrescante.</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$85</span>
+                            <span class="precio-promocion">$70</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pie de página institucional
+         Se repite consistentemente en todas las páginas del sitio -->
+    <footer>
+        <div class="contenedor-pie">
+            <p>Mariscos El Fernando</p>
+            <p><strong>Proyecto Final</strong> | Jesus Fernando | Ingeniería en Computación | 5to Semestre</p>
+        </div>
+    </footer>
+</body>
+</html>

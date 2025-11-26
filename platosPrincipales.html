@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos Principales - Mariscos El Fernando</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo con navegación principal
+         Permite acceder a todas las secciones desde cualquier parte del sitio -->
+    <header>
+        <div class="contenedor-encabezado">
+            <!-- Logo que sirve como enlace de retorno a la página inicial -->
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/LOGO/marisqueria-el-fernando.png" alt="Marisquería El Fernando">
+            </a>
+            
+            <!-- Menú de navegación con opciones principales del restaurante -->
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="index.html">MENÚ PRINCIPAL</a></li>
+                    
+                    <!-- Menú desplegable para categorías de alimentos
+                         Se activa al pasar el mouse sobre "MENÚ COMIDA" -->
+                    <li class="menu-desplegable">
+                        <a href="#" class="boton-desplegable">MENÚ COMIDA</a>
+                        <div class="contenido-desplegable">
+                            <a href="platosPrincipales.html">Platos principales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="postres.html">Postres</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="promociones.html">PROMOCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Barra de navegación secundaria para categorías internas de platos
+         Permite saltar rápidamente entre secciones de la misma página -->
+    <nav class="navegacion-secundaria">
+        <div class="contenedor-navegacion-secundaria">
+            <ul>
+                <li><a href="#aguachiles">AGUACHILES</a></li>
+                <li><a href="#especialidades">ESPECIALIDADES</a></li>
+                <li><a href="#pescados">PESCADOS</a></li>
+                <li><a href="#atun">ATÚN</a></li>
+                <li><a href="#camarones">CAMARONES</a></li>
+                <li><a href="#pulpo">PULPO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal del menú de platos
+         Organiza todas las categorías de alimentos principales -->
+    <div class="contenedor-menu">
+        <h1>PLATOS PRINCIPALES</h1>
+
+        <!-- Sección de aguachiles - platillos frescos y picantes
+             Incluye opciones con diferentes niveles de picante -->
+        <div class="categoria" id="aguachiles">
+            <h2>AGUACHILES</h2>
+            
+            <!-- Plato individual con ID para enlaces directos desde otras páginas -->
+            <div class="elemento-menu" id="aguachile-verde">
+                <img src="IMAGENES/platillos-principal/aguachile-verde-de-camaron.jpg" alt="Aguachile Verde de Camarón" width="350">
+                <div>
+                    <h3>AGUACHILE VERDE DE CAMARÓN</h3>
+                    <p>Camarón cristal marinado en limón acompañado de pepino blanco, cebolla morada fileteada, cilantro, aguacate y nuestra salsa de aguachile y Chiltepin.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (250g): $220</li>
+                        <li>Plato Grande (350g): $300</li>
+                        <li>Plato Familiar (500g): $400</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/aguachile-mando-habanero.jpg" alt="Aguachile Mango Habanero" width="350">
+                <div>
+                    <h3>AGUACHILE MANGO HABANERO</h3>
+                    <p>Camarón curtido en jugo de limón con salsa de mango habanero acompañado de aguacate, cebolla morada, brotes de cilantro.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (250g): $220</li>
+                        <li>Plato Grande (350g): $300</li>
+                        <li>Plato Familiar (500g): $400</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/Aguachile-Rojo.jpg" alt="Aguachile Rojo Estilo Pacífico" width="350">
+                <div>
+                    <h3>AGUACHILE ROJO ESTILO PACÍFICO</h3>
+                    <p>Camarones marinados en limón acompañado de pepino blanco, cebolla morada fileteada, cilantro, aguacate y nuestra salsa de chiles rojos.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (250g): $220</li>
+                        <li>Plato Grande (350g): $300</li>
+                        <li>Plato Familiar (500g): $400</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de especialidades de la casa - platillos signature
+             Representa las creaciones exclusivas del restaurante -->
+        <div class="categoria" id="especialidades">
+            <h2>ESPECIALIDADES DE LA CASA</h2>
+            
+            <!-- Plato con ID para enlace directo desde la página principal -->
+            <div class="elemento-menu" id="torre-mariscos">
+                <img src="IMAGENES/platillos-principal/gran-torre-de-mariscos.jpg" alt="Gran Torre de Mariscos" width="350">
+                <div>
+                    <h3>GRAN TORRE DE MARISCOS</h3>
+                    <p>Camarones, atún, reviche de pescado, pulpo, aguacate, pepino, cebolla, camarones empanizados bañados en nuestra salsa especial.</p>
+                    <ul class="precios">
+                        <li>Tamaño Mediano (400g): $320</li>
+                        <li>Tamaño Grande (600g): $420</li>
+                        <li>Tamaño Familiar (800g): $520</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/molcajete-de-camarones.jpg" alt="Mojajete de Mariscos Estilo Los Mochis" width="350">
+                <div>
+                    <h3>MOJAJETE DE MARISCOS ESTILO LOS MOCHIS</h3>
+                    <p>Mokajete con deliciosos camarones, pulpo, pescado, calamar, bañados en salsa de chilepin tatemado, piña, cebolla, pepino, aguacate acompañado de tostadas.</p>
+                    <ul class="precios">
+                        <li>Tamaño Mediano (450g): $350</li>
+                        <li>Tamaño Grande (550g): $440</li>
+                        <li>Tamaño Familiar (700g): $550</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/pulpo-de-corazon-del-mar.jpg" alt="Pulpo Corazón del Mar" width="350">
+                <div>
+                    <h3>PULPO CORAZÓN DEL MAR</h3>
+                    <p>Estrella de pulpo rostizado con nuestra receta especial, acompañado de papas y vegetales.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (250g): $250</li>
+                        <li>Plato Grande (350g): $330</li>
+                        <li>Plato Especial (450g): $400</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de pescados a la plancha - opciones clásicas
+             Incluye diferentes preparaciones de filetes de pescado -->
+        <div class="categoria" id="pescados">
+            <h2>PESCADOS A LA PLANCHA</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/filete-a-la-plancha.jpg" alt="Filete a la Plancha" width="350">
+                <div>
+                    <h3>FILETE A LA PLANCHA</h3>
+                    <p>Filete del día sal pimientado y cocinado en nuestra plancha, acompañado de arroz y ensalada de la casa.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $180</li>
+                        <li>Plato Grande (300g): $240</li>
+                        <li>Plato Especial (400g): $300</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/filete-al-mojo-de-ajo.jpg" alt="Filete al Mojo de Ajo" width="350">
+                <div>
+                    <h3>FILETE AL MOJO DE AJO</h3>
+                    <p>Filete del día salteado con mantequilla y ajo dorado, acompañado de arroz y ensalada de la casa.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $180</li>
+                        <li>Plato Grande (300g): $240</li>
+                        <li>Plato Especial (400g): $300</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/filete-pescado-a-la-diabla.jpg" alt="Filete a la Diabla" width="350">
+                <div>
+                    <h3>FILETE A LA DIABLA</h3>
+                    <p>Filete salteado con cebollas fileteadas y bañado en salsa diabla, acompañado de arroz y ensalada de la casa.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $180</li>
+                        <li>Plato Grande (300g): $240</li>
+                        <li>Plato Especial (400g): $300</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de especialidades de atún - cortes premium
+             Enfocada en preparaciones gourmet con atún de alta calidad -->
+        <div class="categoria" id="atun">
+            <h2>ESPECIALIDADES DE ATÚN</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/atun-sellado.jpg" alt="Medallón de Atún Sellado" width="350">
+                <div>
+                    <h3>MEDALLÓN DE ATÚN SELLADO</h3>
+                    <p>Delicioso medallón de atún sal pimientado y cocinado en nuestra plancha, acompañado de puré de camote.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $280</li>
+                        <li>Plato Grande (300g): $380</li>
+                        <li>Plato Especial (400g): $480</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/atun-con-costra-de-ajonjoli.jpg" alt="Medallón de Atún en Costra de Ajonjoli" width="350">
+                <div>
+                    <h3>MEDALLÓN DE ATÚN EN COSTRA DE AJONJOLI</h3>
+                    <p>Medallón de Atún en costra de ajonjoli y miel de agave, acompañado de ensalada de la casa y arroz.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $300</li>
+                        <li>Plato Grande (300g): $400</li>
+                        <li>Plato Especial (400g): $500</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de especialidades de camarón - diversas preparaciones
+             Desde opciones picantes hasta tempuras dulces -->
+        <div class="categoria" id="camarones">
+            <h2>ESPECIALIDADES DE CAMARÓN</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/Camarones-a-la-diabla.jpg" alt="Camarones a la Diabla" width="350">
+                <div>
+                    <h3>CAMARONES A LA DIABLA</h3>
+                    <p>Camarones salteados con cebollas fileteadas con salsa de chipotle adobado, acompañados de puré y chips de camote.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (180g): $200</li>
+                        <li>Plato Grande (280g): $280</li>
+                        <li>Plato Especial (380g): $360</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/camarones-al-mojo-de-ajo.jpg" alt="Camarones al Mojo de Ajo" width="350">
+                <div>
+                    <h3>CAMARONES AL MOJO DE AJO</h3>
+                    <p>Camarones tradicionales salteados con mantequilla y ajo dorado, acompañados de puré y chips de camote.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (180g): $200</li>
+                        <li>Plato Grande (280g): $280</li>
+                        <li>Plato Especial (380g): $360</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/camarones-al-coco.jpg" alt="Camarones Tempura Coco" width="350">
+                <div>
+                    <h3>CAMARONES TEMPURA COCO</h3>
+                    <p>Ricos Camarones tempura capeados con coco rayado acompañados de salsa de Mango o Tamarindo.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (180g): $220</li>
+                        <li>Plato Grande (280g): $300</li>
+                        <li>Plato Especial (380g): $380</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de especialidades de pulpo - preparaciones sofisticadas
+             Incluye técnicas de cocción especializadas como zarandeado -->
+        <div class="categoria" id="pulpo">
+            <h2>ESPECIALIDADES DE PULPO</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/pulpo-a-las-brasas.jpg" alt="Pulpo a las Brasas" width="350">
+                <div>
+                    <h3>PULPO A LAS BRASAS</h3>
+                    <p>Pulpo sazonado y zarandeado lentamente, acompañado de pure de papa y espárragos a la mantequilla.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $280</li>
+                        <li>Plato Grande (300g): $380</li>
+                        <li>Plato Especial (400g): $480</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/platillos-principal/pulpo-al-pastor.jpg" alt="Pulpo al Pastor" width="350">
+                <div>
+                    <h3>PULPO AL PASTOR</h3>
+                    <p>Pulpo marinado en nuestra tradicional salsa al pastor, piña y cebolla, acompañado de pure de papa.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $280</li>
+                        <li>Plato Grande (300g): $380</li>
+                        <li>Plato Especial (400g): $480</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Plato con ID para enlace directo desde la página principal -->
+            <div class="elemento-menu" id="pulpo-zarandeado">
+                <img src="IMAGENES/platillos-principal/pulpo-zarandeado.jpg" alt="Pulpo Zarandeado" width="350">
+                <div>
+                    <h3>PULPO ZARANDEADO</h3>
+                    <p>Uno de los Favoritos de nuestros invitados por su exquisita salsa y cebolla frita al grill.</p>
+                    <ul class="precios">
+                        <li>Plato Regular (200g): $280</li>
+                        <li>Plato Grande (300g): $380</li>
+                        <li>Plato Especial (400g): $480</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página institucional
+         Se repite consistentemente en todas las páginas del sitio -->
+    <footer>
+        <div class="contenedor-pie">
+            <p>Mariscos El Fernando</p>
+            <p><strong>Proyecto Final</strong> | Jesus Fernando | Ingeniería en Computación | 5to Semestre</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariscos El Fernando - Página de inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo que permite navegar a todas las secciones del sitio
+         Se mantiene visible mientras el usuario hace scroll en la página -->
+    <header>
+        <div class="contenedor-encabezado">
+            <!-- Logo que funciona como enlace a la página de inicio
+                 Al hacer clic siempre regresa al comienzo del sitio -->
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/LOGO/marisqueria-el-fernando.png" alt="Marisquería El Fernando">
+            </a>
+            
+            <!-- Menú principal con acceso rápido a todas las páginas del restaurante
+                 Incluye un menú desplegable para las categorías de comida -->
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="index.html">MENÚ PRINCIPAL</a></li>
+                    
+                    <!-- Menú desplegable que se activa al pasar el mouse
+                         Muestra tres opciones: platos, bebidas y postres sin recargar la página -->
+                    <li class="menu-desplegable">
+                        <a href="#" class="boton-desplegable">MENÚ COMIDA</a>
+                        <div class="contenido-desplegable">
+                            <a href="platosPrincipales.html">Platos principales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="postres.html">Postres</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="promociones.html">PROMOCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner promocional principal que ocupa todo el ancho de la página
+         Al hacer clic lleva directamente a la página de promociones -->
+    <section class="banner-principal">
+        <a href="promociones.html">
+            <img src="IMAGENES/FRIDAY/BLACK-FRIDAY-MARISQUERIA.png" alt="Promoción Black Friday" class="imagen-banner">
+        </a>
+    </section>
+
+    <!-- Contenido principal de la página de inicio
+         Muestra resumen de los productos más importantes del restaurante -->
+    <main>
+
+        <!-- Sección destacada con paquetes promocionales combinados
+             Estos paquetes solo están disponibles para consumo dentro del restaurante -->
+        <section class="paquetes-friday">
+            <h2>PAQUETES FRIDAY MARINERO</h2>
+            <p>¡Exclusivos para consumo en local!</p>
+            
+            <!-- Grid responsivo que muestra 6 paquetes promocionales
+                 En pantallas grandes muestra 3 columnas, en tablets 2, en móviles 1 -->
+            <div class="contenedor-paquetes">
+
+                <!-- Cada tarjeta de paquete muestra imagen, descripción y precios
+                     Tiene efectos hover que la elevan y cambian colores al pasar el mouse -->
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/CLASICO-MARINERO.png" alt="Clásico Marinero" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CLÁSICO MARINERO</h3>
+                        <p>Filete a la Diabla + Fresas con Crema + Michelada Clásica</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$560</span>
+                            <span class="precio-promocion">$399</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Torre-Sabrosa.png" alt="Torre Sabrosa" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>TORRE SABROSA</h3>
+                        <p>Gran Torre de Mariscos Familiar + Pastel Rojo + Cantarito Loco Familiar</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$1,010</span>
+                            <span class="precio-promocion">$749</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Rostizado-con-Estilo.png" alt="Rostizado con Estilo" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>ROSTIZADO CON ESTILO</h3>
+                        <p>Pulpo Corazón del Mar + Barras de Limón + Daiquiri del Tigre</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$815</span>
+                            <span class="precio-promocion">$599</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Atun-Sellado-y-Frescura.png" alt="Atún Sellado & Frescura" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>ATÚN SELLADO & FRESCURA</h3>
+                        <p>Medallón de Atún Sellado + Copa de Frutas + Tiger Mojito</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$840</span>
+                            <span class="precio-promocion">$619</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Camarones-Diabla-Party.png" alt="Camarones Diabla Party" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>CAMARONES DIABLA PARTY</h3>
+                        <p>Camarones a la Diabla + Helados Artesanales + Michelada Clásica</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$605</span>
+                            <span class="precio-promocion">$449</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-paquete">
+                    <img src="IMAGENES/FRIDAY/Mariscada-Explosiva.png" alt="Mariscada Explosiva" class="imagen-paquete">
+                    <div class="info-paquete">
+                        <h3>MARISCADA EXPLOSIVA</h3>
+                        <p>Mojajete de Mariscos Familiar + Flan Napolitano + Bomba de Michelada</p>
+                        <div class="contenedor-precios">
+                            <span class="precio-anterior">$875</span>
+                            <span class="precio-promocion">$649</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Botón que lleva a la página completa de promociones
+                 Permite ver todas las ofertas disponibles del restaurante -->
+            <div class="contenedor-boton">
+                <a href="promociones.html" class="boton-consultar">CONSULTAR PROMOCIONES</a>
+            </div>
+        </section>
+
+        <!-- Sección de productos más populares organizada por categorías
+             Muestra los 3 productos más vendidos de cada tipo -->
+        <section class="productos-destacados">
+            <h2>TOP 3 POSTRES MÁS VENDIDOS</h2>
+            
+            <!-- Grid de 3 columnas para los postres destacados
+                 Cada tarjeta incluye imagen, estadísticas de ventas y botón de acción -->
+            <div class="contenedor-destacados">
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/postres/pannacotta-con-frutos-rojos.jpg" alt="Panna Cotta">
+                    <div class="info-destacada">
+                        <h3>PANNA COTTA</h3>
+                        <p class="ventas">248 compras este mes</p>
+                        <p class="descripcion">Crema, vainilla, gelatina, frutos rojos frescos</p>
+                        <!-- Botón que lleva directamente a este postre en su página específica
+                             Usa ancla (#) para posicionar exactamente en el producto -->
+                        <a href="postres.html#panna-cotta" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/postres/flan-napolitano.jpg" alt="Flan Napolitano">
+                    <div class="info-destacada">
+                        <h3>FLAN NAPOLITANO</h3>
+                        <p class="ventas">195 compras este mes</p>
+                        <p class="descripcion">Huevo, leche, vainilla, caramelo</p>
+                        <a href="postres.html#flan-napolitano" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/postres/fresas-con-crema.jpg" alt="Fresas con Crema">
+                    <div class="info-destacada">
+                        <h3>FRESAS CON CREMA</h3>
+                        <p class="ventas">182 compras este mes</p>
+                        <p class="descripcion">Fresas naturales, crema, galletas</p>
+                        <a href="postres.html#fresas-con-crema" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segunda sección de productos destacados - bebidas populares
+             Mismo diseño que postres pero con contenido diferente -->
+        <section class="productos-destacados">
+            <h2>TOP 3 BEBIDAS MÁS VENDIDAS</h2>
+            
+            <div class="contenedor-destacados">
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/bebidas/TIGER-MOJITO.png" alt="Tiger Mojito">
+                    <div class="info-destacada">
+                        <h3>TIGER MOJITO</h3>
+                        <p class="ventas">312 compras este mes</p>
+                        <p class="descripcion">Mezcal, hierbabuena, limón verde, miel de agave</p>
+                        <!-- Enlace que lleva directamente al Tiger Mojito en la página de bebidas -->
+                        <a href="bebidas.html#tiger-mojito" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/bebidas/MICHELADA-CUBANA.png" alt="Michelada Cubana">
+                    <div class="info-destacada">
+                        <h3>MICHELADA CUBANA</h3>
+                        <p class="ventas">278 compras este mes</p>
+                        <p class="descripcion">Cerveza clara, limón, salsas especiales, chile piquín</p>
+                        <a href="bebidas.html#michelada-cubana" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/bebidas/CREMA-DE-AVENA-&-CANELA.jpg" alt="Crema de Avena y Canela">
+                    <div class="info-destacada">
+                        <h3>CREMA DE AVENA & CANELA</h3>
+                        <p class="ventas">234 compras este mes</p>
+                        <p class="descripcion">Avena licuada con canela, refrescante y reconfortante</p>
+                        <a href="bebidas.html#crema-avena" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tercera sección de productos destacados - platillos principales
+             Completa la vista general de los productos más populares -->
+        <section class="productos-destacados">
+            <h2>TOP 3 PLATILLOS MÁS VENDIDOS</h2>
+            
+            <div class="contenedor-destacados">
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/platillos-principal/aguachile-verde-de-camaron.jpg" alt="Aguachile Verde">
+                    <div class="info-destacada">
+                        <h3>AGUACHILE VERDE</h3>
+                        <p class="ventas">425 compras este mes</p>
+                        <p class="descripcion">Camarón cristal marinado en limón con pepino y aguacate</p>
+                        <a href="platosPrincipales.html#aguachile-verde" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/platillos-principal/gran-torre-de-mariscos.jpg" alt="Gran Torre de Mariscos">
+                    <div class="info-destacada">
+                        <h3>GRAN TORRE DE MARISCOS</h3>
+                        <p class="ventas">389 compras este mes</p>
+                        <p class="descripcion">Camarones, atún, ceviche, pulpo con salsa especial</p>
+                        <a href="platosPrincipales.html#torre-mariscos" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-destacada">
+                    <img src="IMAGENES/platillos-principal/pulpo-zarandeado.jpg" alt="Pulpo Zarandeado">
+                    <div class="info-destacada">
+                        <h3>PULPO ZARANDEADO</h3>
+                        <p class="ventas">356 compras este mes</p>
+                        <p class="descripcion">Pulpo rostizado con salsa especial y cebolla grillé</p>
+                        <a href="platosPrincipales.html#pulpo-zarandeado" class="boton-consultar">DA CLICK PARA CONSULTAR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página que se repite en todas las páginas del sitio
+         Muestra información básica del proyecto sin datos personales -->
+    <footer>
+        <div class="contenedor-pie">
+            <p>Mariscos El Fernando</p>
+            <p><strong>Proyecto Final</strong> | Jesus Fernando | Ingeniería en Computación | 5to Semestre</p>
+        </div>
+    </footer>
+
+</body>
+</html>

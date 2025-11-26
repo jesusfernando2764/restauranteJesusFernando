@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres - Mariscos El Fernando</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo con navegación global
+         Proporciona acceso consistente a todas las secciones del sitio -->
+    <header>
+        <div class="contenedor-encabezado">
+            <!-- Logo que funciona como enlace de navegación principal
+                 Siempre regresa al usuario a la página de inicio -->
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/LOGO/marisqueria-el-fernando.png" alt="Marisquería El Fernando">
+            </a>
+            
+            <!-- Menú de navegación principal con todas las opciones del restaurante -->
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="index.html">MENÚ PRINCIPAL</a></li>
+                    
+                    <!-- Menú desplegable para categorías de alimentos
+                         Se expande al pasar el cursor sobre "MENÚ COMIDA" -->
+                    <li class="menu-desplegable">
+                        <a href="#" class="boton-desplegable">MENÚ COMIDA</a>
+                        <div class="contenido-desplegable">
+                            <a href="platosPrincipales.html">Platos principales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="postres.html">Postres</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="promociones.html">PROMOCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Barra de navegación secundaria para categorías de postres
+         Permite saltar rápidamente entre secciones dentro de la misma página -->
+    <nav class="navegacion-secundaria">
+        <div class="contenedor-navegacion-secundaria">
+            <ul>
+                <li><a href="#postres-clasicos">POSTRES CLÁSICOS</a></li>
+                <li><a href="#postres-temporada">POSTRES DE TEMPORADA</a></li>
+                <li><a href="#ricos-indulgentes">RICOS E INDULGENTES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal del menú de postres
+         Organiza todas las categorías de dulces y postres -->
+    <div class="contenedor-menu">
+        <h1>POSTRES</h1>
+
+        <!-- Sección de postres clásicos - opciones tradicionales y familiares
+             Postres reconocidos que siempre satisfacen -->
+        <div class="categoria" id="postres-clasicos">
+            <h2>POSTRES CLÁSICOS</h2>
+            
+            <!-- Postre individual con ID para enlaces directos desde otras páginas -->
+            <div class="elemento-menu" id="fresas-con-crema">
+                <img src="IMAGENES/postres/fresas-con-crema.jpg" alt="Fresas con Crema - Postres Clásicos" width="350">
+                <div>
+                    <h3>FRESAS CON CREMA</h3>
+                    <p>Fresas naturales y crema dulce, la combinación perfecta para un final fresco y delicioso. El contraste ideal después de los sabores del mar.</p>
+                    <p><strong>Ingredientes:</strong> Fresas naturales, crema, galletas</p>
+                    <ul class="precios">
+                        <li>Individual: $85</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/pastel-de-campechana.jpg" alt="Postre Campechano" width="350">
+                <div>
+                    <h3>POSTRE CAMPECHANO</h3>
+                    <p>Disfruta de la mezcla perfecta de fresas y duraznos con crema. Dulce, fresco y simplemente irresistible.</p>
+                    <p><strong>Ingredientes:</strong> Fresas, duraznos, crema, galletas</p>
+                    <ul class="precios">
+                        <li>Individual: $90</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/helados-artesanal.jpg" alt="Helados Artesanales" width="350">
+                <div>
+                    <h3>HELADOS ARTESANALES</h3>
+                    <p>Nuestros helados de limón y naranja son el cierre refrescante perfecto. Ideales para limpiar tu paladar y terminar con una sonrisa.</p>
+                    <p><strong>Sabores:</strong> Selección de sabores cítricos</p>
+                    <ul class="precios">
+                        <li>Individual: $70</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Postre con ID para enlace directo desde la página principal -->
+            <div class="elemento-menu" id="flan-napolitano">
+                <img src="IMAGENES/postres/flan-napolitano.jpg" alt="Flan Napolitano" width="350">
+                <div>
+                    <h3>FLAN NAPOLITANO</h3>
+                    <p>El clásico favorito de todos: suave, cremoso y con ese dulce sabor a caramelo que todos aman. La tradición hecha postre.</p>
+                    <p><strong>Ingredientes:</strong> Huevo, leche, vainilla, caramelo</p>
+                    <ul class="precios">
+                        <li>Individual: $75</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de postres de temporada - opciones frescas y estacionales
+             Utiliza ingredientes de temporada para máxima frescura -->
+        <div class="categoria" id="postres-temporada">
+            <h2>POSTRES DE TEMPORADA</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/soberte-de-frutas.jpg" alt="Sorbete de Frutas Tropicales" width="350">
+                <div>
+                    <h3>SORBETE DE FRUTAS TROPICALES</h3>
+                    <p>Los sabores refrescantes y dulces del sorbete sin duda despejarán el paladar y serán el toque perfecto después de una comida completa. Es cremoso pero ligero para un disfrute óptimo, además de estar disponible en una gran variedad de sabores frutales.</p>
+                    <p><strong>Sabores:</strong> Mango, limón, maracuyá, coco</p>
+                    <ul class="precios">
+                        <li>Plato Chico (150g): $65</li>
+                        <li>Plato Mediano (250g): $95</li>
+                        <li>Plato Grande (350g): $140</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/copa-de-frutas.JPG" alt="Copa de Frutas Frescas" width="350">
+                <div>
+                    <h3>COPA DE FRUTAS FRESCAS</h3>
+                    <p>Aunque parezca sencillo, las frutas orgánicas frescas son una opción sublime para terminar tu comida. Nutritivas y deliciosas, tienen todos los sabores brillantes directamente de la naturaleza.</p>
+                    <p><strong>Frutas:</strong> Sandía, melón, papaya, piña, uvas, fresas</p>
+                    <ul class="precios">
+                        <li>Plato Chico (200g): $60</li>
+                        <li>Plato Mediano (350g): $85</li>
+                        <li>Plato Grande (500g): $120</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/Tarta-de-frutas-frescas.jpg" alt="Tarta de Frutas" width="350">
+                <div>
+                    <h3>TARTA DE FRUTAS</h3>
+                    <p>Una crema pastelera dulce y cremosa en una base de hojaldre cubierta con rodajas de fruta fresca tiene un aspecto delicioso y un sabor exquisito. Esa textura crujiente, combinada con la suavidad de la crema pastelera y las frutas, complementa a la perfección.</p>
+                    <p><strong>Ingredientes:</strong> Base hojaldre, crema pastelera, frutas de temporada</p>
+                    <ul class="precios">
+                        <li>Rebanada Chica: $95</li>
+                        <li>Rebanada Mediana: $135</li>
+                        <li>Rebanada Grande: $180</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Postre con ID para enlace directo desde la página principal -->
+            <div class="elemento-menu" id="panna-cotta">
+                <img src="IMAGENES/postres/pannacotta-con-frutos-rojos.jpg" alt="Panna Cotta con Frutos Rojos" width="350">
+                <div>
+                    <h3>PANNA COTTA CON FRUTOS ROJOS</h3>
+                    <p>Es fácil de preparar a pesar de su elegante nombre italiano. Se prepara con crema azucarada, espesada con gelatina y luego moldeada. Es ligera y rica a la vez, perfecta con frutos rojos frescos por encima que aportan un toque de color brillante y un sabor ácido que contrasta con la textura dulce y cremosa.</p>
+                    <p><strong>Ingredientes:</strong> Crema, vainilla, gelatina, frutos rojos frescos</p>
+                    <ul class="precios">
+                        <li>Individual: $105</li>
+                        <li>Doble: $145</li>
+                        <li>Triple: $195</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/yogurt-parfait-smaller.jpg" alt="Parfait de Yogurt" width="350">
+                <div>
+                    <h3>PARFAIT DE YOGURT</h3>
+                    <p>Un delicioso postre francés, los parfaits se pueden preparar de tantas maneras que te dejarán boquiabierto. Consiste en capas de yogurt griego con frutos rojos, granola y miel. Asegúrate de ver las capas en la copa transparente.</p>
+                    <p><strong>Ingredientes:</strong> Yogurt griego, frutos rojos, granola, miel de agave</p>
+                    <ul class="precios">
+                        <li>Individual: $80</li>
+                        <li>Doble: $115</li>
+                        <li>Triple: $155</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/souffle-de-limon.jpg" alt="Soufflé de Limón" width="350">
+                <div>
+                    <h3>SOUFFLÉ DE LIMÓN</h3>
+                    <p>Postre ligero y el broche de oro perfecto. Se disfruta mejor recién salido del horno. Tiene muy poca grasa añadida. Su intenso sabor cítrico lo convierte en un postre imprescindible.</p>
+                    <p><strong>Ingredientes:</strong> Limón, claras de huevo, azúcar, ralladura de limón</p>
+                    <ul class="precios">
+                        <li>Individual: $120</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de postres ricos e indulgentes - opciones más elaboradas
+             Postres gourmet para ocasiones especiales -->
+        <div class="categoria" id="ricos-indulgentes">
+            <h2>RICOS E INDULGENTES</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/pastel-rojo.jpg" alt="Pastel de Terciopelo Rojo" width="350">
+                <div>
+                    <h3>PASTEL DE TERCIOPELO ROJO</h3>
+                    <p>En el sur, hay un pastel venerado por encima de todos. Tiene una textura aterciopelada y sabor a chocolate, cubierto con un dulce glaseado de queso crema. Es reconfortante y cautivador después de comer cualquier cosa.</p>
+                    <p><strong>Ingredientes:</strong> Bizcocho de chocolate, glaseado de queso crema</p>
+                    <ul class="precios">
+                        <li>Rebanada Chica: $110</li>
+                        <li>Rebanada Mediana: $155</li>
+                        <li>Rebanada Grande: $210</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/barras-de-limon.jpg" alt="Barras de Limón" width="350">
+                <div>
+                    <h3>BARRAS DE LIMÓN</h3>
+                    <p>Ácidas y brillantes, las barras de limón aportan un toque especial a la mesa. El brillante sabor ácido de los limones es refrescante, aunque la profundidad de su textura las convierte en un acompañamiento más contundente. Logran un buen equilibrio sin ser demasiado intensos.</p>
+                    <p><strong>Ingredientes:</strong> Base de galleta, relleno de limón, azúcar glass</p>
+                    <ul class="precios">
+                        <li>Individual: $85</li>
+                        <li>Doble: $120</li>
+                        <li>Triple: $165</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/postres/volteado-de-pina.jpg" alt="Pastel de Piña Volteado" width="350">
+                <div>
+                    <h3>PASTEL DE PIÑA VOLTEADO</h3>
+                    <p>Es dulce. Es jugoso. Es tropical. ¡Un éxito! El pastel de piña invertido es difícil de resistir. Con un aroma a piña tan atractivo y un pastel con sabor a mantequilla que lo envuelve, hay pocos caprichos que te enamoren más rápido que un bocado de este pastel.</p>
+                    <p><strong>Ingredientes:</strong> Piña caramelizada, bizcocho, cerezas</p>
+                    <ul class="precios">
+                        <li>Rebanada Chica: $95</li>
+                        <li>Rebanada Mediana: $135</li>
+                        <li>Rebanada Grande: $180</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página con información del proyecto
+         Se mantiene consistente en todas las páginas del sitio -->
+    <footer>
+        <div class="contenedor-pie">
+            <p>Mariscos El Fernando</p>
+            <p><strong>Proyecto Final</strong> | Jesus Fernando | Ingeniería en Computación | 5to Semestre</p>
+        </div>
+    </footer>
+</body>
+</html>

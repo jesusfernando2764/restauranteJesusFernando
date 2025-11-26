@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Mariscos El Fernando</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado que se mantiene fijo en la parte superior al hacer scroll
+         Funciona como menú principal para navegar entre todas las páginas del sitio -->
+    <header>
+        <div class="contenedor-encabezado">
+            <!-- Logo que al hacer clic regresa a la página de inicio -->
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/LOGO/marisqueria-el-fernando.png" alt="Marisquería El Fernando">
+            </a>
+            
+            <!-- Menú de navegación con opciones para todas las secciones del restaurante -->
+            <nav class="navegacion-principal">
+                <ul>
+                    <li><a href="index.html">MENÚ PRINCIPAL</a></li>
+                    
+                    <!-- Menú desplegable que muestra al pasar el mouse sobre "MENÚ COMIDA"
+                         Permite acceder rápidamente a las categorías de alimentos -->
+                    <li class="menu-desplegable">
+                        <a href="#" class="boton-desplegable">MENÚ COMIDA</a>
+                        <div class="contenido-desplegable">
+                            <a href="platosPrincipales.html">Platos principales</a>
+                            <a href="bebidas.html">Bebidas</a>
+                            <a href="postres.html">Postres</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="promociones.html">PROMOCIONES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Barra de navegación interna para saltar entre categorías de bebidas
+         Usa enlaces de ancla para moverse dentro de la misma página sin recargar -->
+    <nav class="navegacion-secundaria">
+        <div class="contenedor-navegacion-secundaria">
+            <ul>
+                <li><a href="#mixologia-mexicana">MIXOLOGÍA MEXICANA</a></li>
+                <li><a href="#micheladas">MICHELADAS</a></li>
+                <li><a href="#refrescos-preparados">REFRESCOS PREPARADOS</a></li>
+                <li><a href="#aguas-preparadas">AGUAS PREPARADAS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal donde se muestra todo el menú de bebidas
+         Tiene un ancho máximo para que se vea bien en pantallas grandes -->
+    <div class="contenedor-menu">
+        <h1>BEBIDAS</h1>
+
+        <!-- Sección de cócteles con alcohol basados en mezcal y tequila
+             Cada bebida tiene su propia tarjeta con imagen y información -->
+        <div class="categoria" id="mixologia-mexicana">
+            <h2>MIXOLOGÍA MEXICANA</h2>
+            
+            <!-- Tarjeta individual para cada bebida que muestra imagen, descripción y precios
+                 Al hacer clic en los enlaces de otras páginas, llevan directamente aquí -->
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/GARIBALDI.jpg" alt="Garibaldi Mezcal" width="350">
+                <div>
+                    <h3>GARIBALDI MEZCAL</h3>
+                    <p>Una reinterpretación del clásico italiano con alma mexicana. Mezcal artesanal se fusiona con Campari y jugo de naranja fresco, creando un aperitivo equilibrado entre lo amargo y lo cítrico. Perfecto para comenzar cualquier celebración.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Joven, Campari, jugo de naranja fresco</p>
+                    <ul class="precios">
+                        <li>Copa Chica (200 ml): $150</li>
+                        <li>Copa Mediana (300 ml): $190</li>
+                        <li>Copa Grande (400 ml): $230</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Esta bebida tiene un ID especial para que otras páginas puedan enlazar directamente a ella -->
+            <div class="elemento-menu" id="tiger-mojito">
+                <img src="IMAGENES/bebidas/TIGER-MOJITO.png" alt="Tiger Mojito" width="350">
+                <div>
+                    <h3>TIGER MOJITO</h3>
+                    <p>El clásico cubano reinventado con espíritu mexicano. Hierbabuena fresca, limón verde y miel de agave se mezclan con mezcal, coronado con refresco de manzana. Refrescante y aromático, ideal para días calurosos.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Joven, hierbabuena, limón verde, miel de agave, refresco de manzana</p>
+                    <ul class="precios">
+                        <li>Copa Chica (250 ml): $160</li>
+                        <li>Copa Mediana (350 ml): $200</li>
+                        <li>Copa Grande (450 ml): $240</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/EL-DAIQUIRI-DEL-TIGRE.png" alt="El Daiquiri del Tigre" width="350">
+                <div>
+                    <h3>EL DAIQUIRI DEL TIGRE</h3>
+                    <p>La esencia del Daiquiri tradicional elevada con mezcal. Simplicidad y elegancia en cada sorbo, donde el limón amarillo y la miel de agave realzan los matices ahumados del destilado mexicano.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Joven, jugo de limón amarillo, miel de agave</p>
+                    <ul class="precios">
+                        <li>Copa Chica (180 ml): $170</li>
+                        <li>Copa Mediana (250 ml): $210</li>
+                        <li>Copa Grande (320 ml): $250</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/MEZCALLINA.png" alt="Mezcallina" width="350">
+                <div>
+                    <h3>MEZCALLINA</h3>
+                    <p>Nuestra versión de la Caipiriña brasileña. Limón verde en cubos macerado con azúcar y mezcal, creando un cóctel vibrante y lleno de carácter. Una explosión de sabores cítricos y terrosos.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Joven, limón verde, azúcar</p>
+                    <ul class="precios">
+                        <li>Copa Chica (220 ml): $140</li>
+                        <li>Copa Mediana (320 ml): $180</li>
+                        <li>Copa Grande (420 ml): $220</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/EL-LADO-SUR.png" alt="El Lado Sur" width="350">
+                <div>
+                    <h3>EL LADO SUR</h3>
+                    <p>Inspirado en el Southside clásico, este cóctel combina mezcal con hierbabuena fresca, jugo de limón verde y miel de agave. Un perfil herbal y refrescante con un final limpio y aromático.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Joven, hierbabuena, jugo de limón verde, miel de agave</p>
+                    <ul class="precios">
+                        <li>Copa Chica (200 ml): $165</li>
+                        <li>Copa Mediana (280 ml): $205</li>
+                        <li>Copa Grande (360 ml): $245</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/BENGALA-MARTINI.png" alt="Bengala Martini" width="350">
+                <div>
+                    <h3>BENGALA MARTINI</h3>
+                    <p>Un martini sofisticado con alma mexicana. Mezcal reposado se combina con Lillet Blanc, creando un cóctel sedoso y complejo. Perfumado con un twist de limón amarillo para un final cítrico.</p>
+                    <p><strong>Ingredientes:</strong> Mezcal Ojo de Tigre Reposado, Lillet Blanc, twist de limón amarillo</p>
+                    <ul class="precios">
+                        <li>Copa Chica (150 ml): $190</li>
+                        <li>Copa Mediana (200 ml): $230</li>
+                        <li>Copa Grande (250 ml): $270</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de bebidas cerveceras tradicionales mexicanas
+             Incluye diferentes estilos de micheladas y variantes -->
+        <div class="categoria" id="micheladas">
+            <h2>MICHELADAS</h2>
+            
+            <!-- Bebida con ID para enlaces directos desde otras páginas -->
+            <div class="elemento-menu" id="michelada-cubana">
+                <img src="IMAGENES/bebidas/MICHELADA-CUBANA.png" alt="Michelada Cubana" width="350">
+                <div>
+                    <h3>MICHELADA CUBANA</h3>
+                    <p>La clásica michelada con toque cubano. Una mezcla perfecta de limón fresco, salsas inglesa y Maggi, con un toque picante de Tabasco. Escarchada con chile piquín para un inicio explosivo de sabor.</p>
+                    <p><strong>Ingredientes:</strong> Cerveza clara, jugo de limón, salsas inglesa, Maggi y Tabasco, chile piquín</p>
+                    <ul class="precios">
+                        <li>Tarro Chico (500 ml): $110</li>
+                        <li>Tarro Mediano (750 ml): $150</li>
+                        <li>Tarro Grande (1000 ml): $190</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/michebombas.jpg" alt="Bomba de Michelada" width="350">
+                <div>
+                    <h3>BOMBA DE MICHELADA</h3>
+                    <p>Una experiencia explosiva de sabores. Nuestra bomba de azúcar especiada se derrite lentamente en la cerveza, liberando tamarindo, chamoy y gomitas enchiladas. Perfecta para compartir y sorprender.</p>
+                    <p><strong>Ingredientes:</strong> Cerveza clara, bomba de tamarindo, chamoy, gomitas enchiladas, jugo de tomate con almejas</p>
+                    <ul class="precios">
+                        <li>Bomba Individual (600 ml): $180</li>
+                        <li>Bomba Compartir (1000 ml): $250</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/michelada-de-tamarindo.jpg" alt="Michelada de Tamarindo" width="350">
+                <div>
+                    <h3>MICHELADA DE TAMARINDO</h3>
+                    <p>El dulzor y acidez del tamarindo se fusionan con la cerveza en esta michelada única. Escarchada con chile y azúcar, decorada con jícama y gomitas de tamarindo para una experiencia tropical.</p>
+                    <p><strong>Ingredientes:</strong> Cerveza clara, jarabe de tamarindo, jugo de naranja, limón, jícama, gomitas de tamarindo</p>
+                    <ul class="precios">
+                        <li>Tarro Chico (500 ml): $120</li>
+                        <li>Tarro Mediano (750 ml): $160</li>
+                        <li>Tarro Grande (1000 ml): $200</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/cantarito-loco.jpg" alt="Cantarito Loco" width="350">
+                <div>
+                    <h3>CANTARITO LOCO</h3>
+                    <p>La versión más festiva del cantarito tradicional. Naranja, toronja y limón se mezclan con tequila y refresco de toronja, servido en vaso escarchado con tamarindo y chile. ¡Pura fiesta mexicana!</p>
+                    <p><strong>Ingredientes:</strong> Tequila blanco, jugos de naranja, toronja y limón, refresco de toronja, tamarindo</p>
+                    <ul class="precios">
+                        <li>Cantarito Individual (600 ml): $160</li>
+                        <li>Cantarito Familiar (1200 ml): $280</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/MICHELADA-CLÁSICA.jpg" alt="Michelada Clásica" width="350">
+                <div>
+                    <h3>MICHELADA CLÁSICA</h3>
+                    <p>La esencia de la michelada tradicional. Limón fresco, sal y chile en el borde, con el equilibrio perfecto entre acidez y frescura. Simple, refrescante y siempre satisfactoria.</p>
+                    <p><strong>Ingredientes:</strong> Cerveza clara, jugo de limón, sal, chile en polvo, salsa Maggi</p>
+                    <ul class="precios">
+                        <li>Tarro Chico (500 ml): $95</li>
+                        <li>Tarro Mediano (750 ml): $135</li>
+                        <li>Tarro Grande (1000 ml): $175</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de bebidas sin alcohol creativas y refrescantes
+             Alternativas para quienes no consumen alcohol o prefieren opciones más ligeras -->
+        <div class="categoria" id="refrescos-preparados">
+            <h2>REFRESCOS PREPARADOS</h2>
+            
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/coctel-sangria.jpeg" alt="Sangría Tropical Sin Alcohol" width="350">
+                <div>
+                    <h3>SANGRÍA TROPICAL SIN ALCOHOL</h3>
+                    <p>Una versión refrescante y frutal de la clásica sangría. Mezcla de jugos naturales con frutas frescas y un toque cítrico, servida bien fría. Perfecta para maridar con mariscos.</p>
+                    <p><strong>Ingredientes:</strong> Jugo de naranja, piña, limón, rodajas de naranja, refresco de manzana, hielo</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $50</li>
+                        <li>Copa Mediana (500 ml): $65</li>
+                        <li>Copa Grande (700 ml): $90</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/michelada-sin-alcohol.jpg" alt="Michelada Sin Alcohol Clamato Twist" width="350">
+                <div>
+                    <h3>MICHELADA SIN ALCOHOL CLAMATO TWIST</h3>
+                    <p>La combinación perfecta de sabores: la acidez del limón, la profundidad del Clamato y la frescura burbujeante de Peñafiel Twist. Servida en copa escarchada con sal.</p>
+                    <p><strong>Ingredientes:</strong> Clamato, jugo de limón, Peñafiel Twist Limón, sal, hielo</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $45</li>
+                        <li>Copa Mediana (500 ml): $60</li>
+                        <li>Copa Grande (700 ml): $85</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/coctel-margarita.png" alt="Margarita Cítrica Sin Alcohol" width="350">
+                <div>
+                    <h3>MARGARITA CÍTRICA SIN ALCOHOL</h3>
+                    <p>Una margarita fresca y vibrante sin alcohol. El equilibrio perfecto entre lo ácido y lo refrescante, ideal para quienes buscan una opción ligera y llena de sabor.</p>
+                    <p><strong>Ingredientes:</strong> Peñafiel Limonada, jugo de limón, hielo, rodaja de limón</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $40</li>
+                        <li>Copa Mediana (500 ml): $55</li>
+                        <li>Copa Grande (700 ml): $75</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/MOJITO-AGUA-MINERAL.jpg" alt="Mojito de Higo con Agua Mineral" width="350">
+                <div>
+                    <h3>MOJITO DE HIGO CON AGUA MINERAL</h3>
+                    <p>Una bebida aromática y ligeramente dulce, con puré de higo natural, menta fresca y la burbuja fina de Peñafiel Agua Mineral. Elegante y refrescante.</p>
+                    <p><strong>Ingredientes:</strong> Higos, miel, menta, limón, Peñafiel Agua Mineral, hielo</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $55</li>
+                        <li>Copa Mediana (500 ml): $70</li>
+                        <li>Copa Grande (700 ml): $95</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/TÉ-HELADO-DE-LIMÓN.jpg" alt="Té Helado de Limón con Burbuja" width="350">
+                <div>
+                    <h3>TÉ HELADO DE LIMÓN CON BURBUJA</h3>
+                    <p>La clásica infusión de té de limón, fría y revitalizada con la efervescencia suave de Peñafiel. Simple, limpia y muy refrescante.</p>
+                    <p><strong>Ingredientes:</strong> Té de limón, rodajas de limón, Peñafiel Agua Mineral, hielo</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $35</li>
+                        <li>Copa Mediana (500 ml): $50</li>
+                        <li>Copa Grande (700 ml): $70</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de aguas frescas tradicionales mexicanas
+             Bebidas cremosas y refrescantes basadas en frutas y cereales -->
+        <div class="categoria" id="aguas-preparadas">
+            <h2>AGUAS PREPARADAS</h2>
+            
+            <!-- Bebida con ID para enlaces directos desde la página principal -->
+            <div class="elemento-menu" id="crema-avena">
+                <img src="IMAGENES/bebidas/CREMA-DE-AVENA-&-CANELA.jpg" alt="Crema de Avena & Canela" width="350">
+                <div>
+                    <h3>CREMA DE AVENA & CANELA</h3>
+                    <p>Una base clásica y reconfortante. La avena licuada le da un cuerpo sedoso y un sabor suave, realzado por el toque cálido de la canela. Simple, cremosa y deliciosamente refrescante.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $30</li>
+                        <li>Copa Mediana (473 ml): $38</li>
+                        <li>Copa Grande (710 ml): $55</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/crema-de-cafe.jpg" alt="Crema de Café & Amaranto" width="350">
+                <div>
+                    <h3>CREMA DE CAFÉ & AMARANTO</h3>
+                    <p>Una combinación audaz y energizante. El intenso aroma del café se fusiona con el inconfundible crujido y sabor tostado del amaranto, creando una experiencia única en cada sorbo.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $34</li>
+                        <li>Copa Mediana (473 ml): $42</li>
+                        <li>Copa Grande (710 ml): $60</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/crema-de-frutos-rojos-y-platano.jpg" alt="Crema de Frutos Rojos & Plátano" width="350">
+                <div>
+                    <h3>CREMA DE FRUTOS ROJOS & PLÁTANO</h3>
+                    <p>Una explosión de frutos dulces y cremosos. Las fresas y uvas aportan su acidez característica, mientras que el plátano equilibra con su textura densa y su sabor dulce, resultando en una mezcla vibrante y frutal.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $37</li>
+                        <li>Copa Mediana (473 ml): $45</li>
+                        <li>Copa Grande (710 ml): $65</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/crema-de-guayaba.jpg" alt="Crema de Guayaba" width="350">
+                <div>
+                    <h3>CREMA DE GUAYABA</h3>
+                    <p>La esencia tropical en su versión más cremosa y suave. Su dulzor natural y aroma distintivo se realzan con nuestra base láctea, ofreciendo un sabor limpio y refrescante.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $32</li>
+                        <li>Copa Mediana (473 ml): $40</li>
+                        <li>Copa Grande (710 ml): $58</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/CREMA-DE-LIMÓN-&-MANZANA-VERDE.jpg" alt="Crema de Limón & Manzana Verde" width="350">
+                <div>
+                    <h3>CREMA DE LIMÓN & MANZANA VERDE</h3>
+                    <p>Una opción vibrante y refrescante. La acidez cítrica del limón se equilibra con la dulzura suave de la manzana verde y un toque picante de jengibre, creando un perfil brillante y estimulante.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $34</li>
+                        <li>Copa Mediana (473 ml): $42</li>
+                        <li>Copa Grande (710 ml): $60</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="elemento-menu">
+                <img src="IMAGENES/bebidas/HORCHATA-CREMOSA-DE-FRESA.jpg" alt="Horchata Cremosa de Fresa" width="350">
+                <div>
+                    <h3>HORCHATA CREMOSA DE FRESA</h3>
+                    <p>Nuestra versión signature. Una horchata de arroz con una textura excepcionalmente cremosa, infusionada con canela y adornada con fresas frescas y hielos de fresa para un final frutal y festivo.</p>
+                    <ul class="precios">
+                        <li>Copa Chica (350 ml): $40</li>
+                        <li>Copa Mediana (473 ml): $48</li>
+                        <li>Copa Grande (710 ml): $70</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página que se muestra en todas las páginas del sitio
+         Incluye información del proyecto sin datos personales del estudiante -->
+    <footer>
+        <div class="contenedor-pie">
+            <p>Mariscos El Fernando</p>
+            <p><strong>Proyecto Final</strong> | Jesus Fernando | Ingeniería en Computación | 5to Semestre</p>
+        </div>
+    </footer>
+</body>
+</html>
