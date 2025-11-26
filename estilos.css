@@ -713,16 +713,99 @@ footer {
 /* DISEÑO RESPONSIVE - TELÉFONOS MÓVILES */
 
 @media (max-width: 480px) {
-    .navegacion-principal ul {
-        flex-direction: column;
-        align-items: center;
+    body {
+        padding-top: 80px;
+    }
+    
+    header {
+        padding: 0.6rem 0;
+    }
+    
+    .contenedor-encabezado {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 0.5rem;
+        padding: 0 10px;
+    }
+    
+    .logo {
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    
+    .logo img {
+        height: 40px;
+        width: auto;
+        max-width: 130px;
+    }
+    
+    .navegacion-principal {
+        width: 100%;
+        order: 2;
+    }
+    
+    .navegacion-principal ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0;
+    }
+    
+    .navegacion-principal li {
+        flex: 0 0 auto;
+    }
+    
+    .navegacion-principal a {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 0.5rem 0.6rem;
+        white-space: nowrap;
+    }
+    
+    .menu-desplegable {
+        flex: 0 0 auto;
+    }
+    
+    .boton-desplegable {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 0.5rem 0.6rem;
+        white-space: nowrap;
+    }
+    
+    .contenido-desplegable {
+        display: none;
+    }
+    
+    .navegacion-secundaria {
+        top: 60px;
+        padding: 0.4rem 0;
     }
     
     .navegacion-secundaria ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem;
+        padding: 0;
+    }
+    
+    .navegacion-secundaria li {
+        flex: 0 0 auto;
+    }
+    
+    .navegacion-secundaria a {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+        white-space: nowrap;
     }
     
     .contenedor-precios {
